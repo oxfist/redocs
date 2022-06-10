@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 're:docs',
   tagline: 'Descubre tus nuevas herramientas ⭐︎ 🛠',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://redocs.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -56,6 +56,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        respectPrefersColorScheme: true
+      },
+      image: 'img/cat.png',
       navbar: {
         title: 'My Site',
         logo: {
