@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 're:docs',
-  tagline: 'Descubre tus nuevas herramientas ⭐︎ 🛠',
+  tagline: 'Descubre tus nuevas herramientas',
   url: 'https://redocs.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
