@@ -29,7 +29,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.redocs {
+.redocs,
+.navbar__title {
   font-family: "Source Serif Pro";
   font-style: italic;
   font-weight: 900;

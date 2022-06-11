@@ -38,6 +38,10 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/oxfist/redocs",
+          remarkPlugins: [
+            require("@docusaurus/remark-plugin-npm2yarn"),
+            { sync: true },
+          ],
         },
         blog: {
           showReadingTime: true,
@@ -61,9 +65,9 @@ const config = {
       },
       image: "img/cat.png",
       navbar: {
-        title: "My Site",
+        title: "re:docs",
         logo: {
-          alt: "My Site Logo",
+          alt: "re:docs",
           src: "img/logo.svg",
         },
         items: [
@@ -88,7 +92,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Introducción",
                 to: "/docs/intro",
               },
             ],
