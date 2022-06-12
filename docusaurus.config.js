@@ -9,7 +9,7 @@ const GITHUB_URL = "https://github.com/oxfist/redocs";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "re:docs",
-  tagline: "Obtén las mejores herramientas para el desarrollo web",
+  tagline: "Las mejores herramientas para el desarrollo web a tu disposición",
   url: "https://redocs.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -75,9 +75,9 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Tutoriales",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: GITHUB_URL,
             label: "GitHub",
