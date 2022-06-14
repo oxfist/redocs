@@ -5,13 +5,23 @@ sidebar_position: 1
 
 # ¿Qué es <span class="redocs">re:docs</span>?
 
-Cuando codeas sueles enfrentarte a tareas repetitivas, inconveniencias y
-dolores. Sin embargo, existen herramientas cuyo _propósito_ es alivianar ese
-proceso para así poder enfocarnos en la parte _más importante_ del problema que
-estamos resolviendo.
+Cuando codeas es común enfrentarte a tareas repetitivas, inconvenientes y
+dolorosas. Sin embargo, actualmente hay muchas herramientas cuyo _propósito_
+mismo es alivianarnos la carga durante el proceso. Así podemos enfocar nuestras
+energías en la parte _más relevante_ de la solución que estamos implementando en
+código.
 
-<span class="redocs">re:docs</span> es una plataforma que junta las mejores de
-esas herramientas y te enseña a usarlas <em>fácilmente</em>. Con la ayuda de
-esta plataforma no solo las tendrás dichas herramientas “habilitadas” en tu
-<em>entorno de desarrollo</em>, también entenderás cómo funcionan, cómo hacerlas
-trabajar juntas y cómo sacarle el <em>mejor provecho</em> a cada una.
+<p><span class="redocs">re:docs</span> es una plataforma que agrupa las mejores de
+esas herramientas de desarrollo y te enseña a usarlas <em>fácilmente</em> ✨.</p>
+
+Con la ayuda de esta plataforma no solo tendrás excelentes herramientas
+“habilitadas” en tu _entorno de desarrollo_, también entenderás cómo funcionan,
+cómo hacerlas trabajar juntas y cómo sacarle el _mejor provecho_ a cada una.
+
+## ¡Quiero saber más!
+
+Estas son solo algunas de las herramientas que podrás usar con la ayuda de este
+sitio:
+
+1.  [Prettier](./prettier/como-usar)
+1.  [ESLint](./eslint/como-usar)
