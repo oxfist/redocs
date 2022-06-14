@@ -98,7 +98,7 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Más",
             items: [
               {
                 label: "Blog",
