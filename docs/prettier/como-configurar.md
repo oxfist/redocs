@@ -3,7 +3,7 @@ description: Instala y configura Prettier para usarlo en tu proyecto
 sidebar_position: 1
 ---
 
-# Cómo usar Prettier
+# Cómo configurar Prettier
 
 ## Instalación
 
