@@ -24,8 +24,20 @@ const ROCKET_SPRING_CONFIG = {
   y: -5,
 };
 
-function HomepageHeader() {
+function RedocsLogo({ text }) {
   const headerAnimationConfig = useSpring(MAIN_HEADER_SPRING_CONFIG);
+
+  return (
+    <animated.h1
+      style={headerAnimationConfig}
+      className={clsx("hero__title", "redocs")}
+    >
+      {text}
+    </animated.h1>
+  );
+}
+
+function BoopingRocket() {
   const [arrowAnimationConfiguration, triggerBoop] =
     useBoop(ROCKET_SPRING_CONFIG);
 
@@ -45,26 +57,22 @@ function HomepageHeader() {
     };
   }, [triggerBoop]);
 
+  return <animated.span style={arrowAnimationConfiguration}>🚀</animated.span>;
+}
+
+function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
-        <animated.h1
-          style={headerAnimationConfig}
-          className={clsx("hero__title", "redocs")}
-        >
-          {siteConfig.title}
-        </animated.h1>
+        <RedocsLogo text={siteConfig.title} />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            ¡Quiero ver!{" "}
-            <animated.span style={arrowAnimationConfiguration}>
-              🚀
-            </animated.span>
+            ¡Quiero ver! <BoopingRocket />
           </Link>
         </div>
       </div>
