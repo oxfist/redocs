@@ -1,6 +1,7 @@
 ---
 title: ¿Qué es re:docs?
 sidebar_position: 1
+slug: "/"
 ---
 
 # ¿Qué es <span class="redocs">re:docs</span>?
@@ -23,7 +24,6 @@ cómo hacerlas trabajar juntas y cómo sacarle el _mejor provecho_ a cada una.
 Estas son solo algunas de las herramientas que podrás usar con la ayuda de este
 sitio:
 
-1.  [Prettier](./prettier/como-configurar): para formatear automáticamente tu
-    código
+1.  [Prettier](./prettier/intro): para formatear automáticamente tu código
 1.  [ESLint](./eslint/como-configurar): para detectar errores y ocupar buenas
     prácticas en código

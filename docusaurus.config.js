@@ -42,6 +42,7 @@ const config = {
             require("@docusaurus/remark-plugin-npm2yarn"),
             { sync: true },
           ],
+          breadcrumbs: false,
         },
         blog: {
           showReadingTime: true,
