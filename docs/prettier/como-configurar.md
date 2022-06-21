@@ -1,16 +1,17 @@
 ---
+title: 2. Cómo configurar Prettier
 description: Instala y configura Prettier para usarlo en tu proyecto
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Cómo configurar Prettier
 
-## Instalación
+Para instalar y ocupar Prettier en tu proyecto e integrarlo a VSCode, sigue las
+instrucciones en las secciones a continuación.
 
-Para instalar y ocupar Prettier en tu proyecto e integrarlo a VSCode, sigue los
-pasos a continuación:
+## Instalación en tu proyecto
 
-1. Instala el paquete `prettier` ejecutando en tu terminal:
+1. Instala el paquete `prettier` ejecutando lo siguiente en tu terminal:
 
    ```bash npm2yarn
    npm install --save-dev prettier
@@ -46,6 +47,8 @@ pasos a continuación:
 
 ## Integración con VSCode
 
+Sigue los siguientes pasos para que Prettier funcione automáticamente en VSCode:
+
 1. Instala la extensión de Prettier en VSCode:
 
    ![Captura de pantalla de la extensión de Prettier en VSCode](./prettier_extension.png "Busca e instala la extensión Prettier")
@@ -67,3 +70,6 @@ pasos a continuación:
    reglas de formateo:
 
    ![Captura de pantalla de opción Require Config activada](./require_config.png "Activa la opción Require Config")
+
+Terminando el último paso Prettier debiera formatear automáticamente el código
+cada vez que guardes el contenido de un archivo.
