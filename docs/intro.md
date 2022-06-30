@@ -25,5 +25,5 @@ Estas son solo algunas de las herramientas que podrás usar con la ayuda de este
 sitio:
 
 1.  [Prettier](./prettier/intro): para formatear automáticamente tu código
-1.  [ESLint](./eslint/como-configurar): para detectar errores y ocupar buenas
-    prácticas en código
+1.  [ESLint](./eslint/intro): para detectar errores y ocupar buenas prácticas en
+    código

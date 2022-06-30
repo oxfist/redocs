@@ -35,7 +35,14 @@ instrucciones en las secciones a continuación.
    dentro de `scripts`, lo siguiente:
 
    ```json title="package.json"
-   "format": "prettier --write ."
+   {
+      ...
+      "scripts": {
+         ...
+         "format": "prettier --write ."
+      }
+      ...
+   }
    ```
 
 5. Finalmente, ahora puedes arreglar el formato de todos tus archivos ejecutando
