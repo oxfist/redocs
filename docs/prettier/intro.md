@@ -11,7 +11,12 @@ problema de “formatear” código. Formatear tu código de forma consistente p
 que éste sea más legible y entendible es increíblemente importante que un equipo
 de desarrollo pueda colaborar efectivamente.
 
-Puedes usar Prettier desde la terminal o integrarlo a un editor de texto.
+:::tip
+
+Puedes usar Prettier desde la **terminal** o integrarlo a un **editor de texto**
+(uso recomendado).
+
+:::
 
 Aunque es posible configurar Prettier de forma “global” para que aplique el
 mismo estilo de código a diversos proyectos, lo _más recomendado_ —y también más
@@ -19,9 +24,9 @@ usado— es definir una configuración específica por proyecto. De esta forma,
 algunos proyectos pueden requerir, entre otros, puntos y comas al final de cada
 línea, o solo comillas simples, y otro no.
 
-A continuación puedes ver el resultado de tener configurado Prettier en VSCode
-para que formatee el código automáticamente cada vez que guardas los cambios de
-un archivo.
+Abajo un ejemplo de cómo funciona Prettier integrado con VSCode para que
+formatee el código automáticamente cada vez que guardas los cambios de un
+archivo.
 
 ![Captura de editor de texto formateando código automáticamente](./prettier_format_on_save.gif "Formateo automático de código")
 
