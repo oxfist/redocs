@@ -159,4 +159,19 @@ conjunto. 🚀
 
 ## Integración con VSCode
 
-En construcción... 🛠
+Puedes configurar ESLint para que se integre a VSCode. Con esto podrás obtener
+reportes de errores directamente en el editor.
+
+Primero, instala la extensión de ESLint en VSCode.
+
+![Captura de pantalla de la extensión de ESLint en VSCode](./eslint_extension.png "Busca e instala la extensión ESLint")
+
+Asegúrate de tener ESLint _deshabilitado_ como formateador de texto. De esta
+forma evitarás colisiones con otros formateadores como Prettier.
+
+![Captura de pantalla de ESLint deshabilitado como formateador](./eslint_formatter_off.png "Mantén ESlint deshabilitado como formateador")
+
+Ahora ya debieras tener ESLint correctamente configurado y entregando reportes
+de errores directo en el código.
+
+![Captura de editor de texto mostrando reportes de errores](./eslint_errors.gif "Análisis estático de código")
