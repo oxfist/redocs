@@ -6,8 +6,8 @@ sidebar_position: 2
 
 # Cómo configurar ESLint
 
-ESLint se puede instalar y ocupar en el desarrollo de un proyecto de software.
-También se puede integrar a un editor de texto como VSCode.
+ESLint se puede instalar y ocupar durante el desarrollo de un proyecto de
+software. También se puede integrar a un editor de texto como VSCode.
 
 ## Instalando en tu proyecto
 
@@ -42,7 +42,7 @@ las características de tu proyecto que se usarán en la configuración inicial.
 
 :::info
 
-Completa así el tutorial:
+Sugerencias para el tutorial:
 
 - Cuando te pregunte por qué uso quieres para ESLint, selecciona la opción **“To
   check syntax, find problems, and enforce code style”** para así obtener más
@@ -113,8 +113,8 @@ yarn lint
 
 ## Integración con Prettier
 
-Si instalas ESLint y Prettier en el mismo proyecto, es probable que tengas
-algunas colisiones entre errores de ESLint y el formateo de Prettier.
+Si instalas ESLint y Prettier juntos, es probable que tengas algunas colisiones
+entre errores de ESLint y el formateo de Prettier.
 
 La integración con Prettier consiste en instalar dos nuevas dependencias, (1) un
 paquete para que el formateo no colisione con ESLint y (2) un paquete para
