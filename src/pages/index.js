@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import clsx from "clsx";
 import { useSpring, animated } from "react-spring";
 
@@ -36,6 +37,10 @@ function RedocsLogo({ text }) {
     </animated.h1>
   );
 }
+
+RedocsLogo.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 function BoopingRocket() {
   const [arrowAnimationConfiguration, triggerBoop] =
@@ -80,7 +85,7 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Holi bbs ⚡️`}
+      title="Holi bbs ⚡️"
       description="Las mejores herramientas para desarrollo web, fácilmente a tu disposición"
     >
       <HomepageHeader />

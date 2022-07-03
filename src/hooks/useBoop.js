@@ -29,7 +29,7 @@ function useBoop({
 
   useEffect(() => {
     if (!isBooped) {
-      return;
+      return null;
     }
 
     // Always cancel animation after timing duration

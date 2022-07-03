@@ -13,6 +13,12 @@ module.exports = {
   },
   plugins: ["react", "prettier"],
   rules: {
+    "global-require": "off",
     "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
+    "import/no-unresolved": [
+      2,
+      { ignore: ["^@theme", "^@docusaurus", "^@site"] },
+    ],
   },
 };
