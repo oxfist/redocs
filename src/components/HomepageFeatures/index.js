@@ -1,9 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import clsx from "clsx";
+
 import styles from "./styles.module.css";
 
 const FeatureList = [
   {
+    id: 1000,
     title: "Fácil de usar",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
@@ -14,6 +17,7 @@ const FeatureList = [
     ),
   },
   {
+    id: 1001,
     title: "Enfócate en lo que realmente importa",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
@@ -25,6 +29,7 @@ const FeatureList = [
     ),
   },
   {
+    id: 1002,
     title: "Powered by React",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
@@ -50,13 +55,26 @@ function Feature({ Svg, title, description }) {
   );
 }
 
+Feature.propTypes = {
+  Svg: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+Feature.propTypes = {};
+
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map(({ Svg, title, description, id }) => (
+            <Feature
+              key={id}
+              Svg={Svg}
+              title={title}
+              description={description}
+            />
           ))}
         </div>
       </div>
