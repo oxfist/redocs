@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: "/"
 ---
 
-# ¿Qué es <span class="redocs">re:docs</span>?
+# ¿Qué es <span className="redocs">re:docs</span>?
 
 Cuando codeas es común enfrentarte a tareas repetitivas, inconvenientes y
 dolorosas. Sin embargo, actualmente hay muchas herramientas cuyo _propósito_
@@ -12,7 +12,7 @@ mismo es alivianarnos la carga durante el proceso. Así podemos enfocar nuestras
 energías en la parte _más relevante_ de la solución que estamos implementando en
 código.
 
-<p><span class="redocs">re:docs</span> es una plataforma que agrupa las mejores de
+<p><span className="redocs">re:docs</span> es una plataforma que agrupa las mejores de
 esas herramientas de desarrollo y te enseña a usarlas <em>fácilmente</em> ✨.</p>
 
 Con la ayuda de esta plataforma no solo tendrás excelentes herramientas
