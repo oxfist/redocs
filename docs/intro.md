@@ -6,17 +6,18 @@ slug: "/"
 
 # ¿Qué es <span className="redocs">re:docs</span>?
 
-Cuando codeas es muy común enfrentarse a tareas tediosas y repetitivas una y
-otra vez. Actualmente existen muchas herramientas cuyo _propósito_ es alivianar
-la carga de tener que hacer estas tareas durante el desarrollo. De esta forma es
-posible enfocar nuestras energías en la parte _más relevante_ de la solución que
-estamos implementando en código.
+Cuando codeas es muy común tener que hacer tareas tediosas y repetitivas.
+Actualmente existen muchas herramientas cuyo _propósito_ es facilitar dichas
+tareas durante el desarrollo.
 
 <p><span className="redocs">re:docs</span> junta las mejores de esas herramientas para desarrollo y te enseña a usarlas <em>fácilmente</em> ✨.</p>
 
 Con la ayuda de esta plataforma no solo tendrás excelentes herramientas
-“habilitadas” en tu _entorno de desarrollo_, también entenderás cómo funcionan,
-cómo hacerlas trabajar juntas y cómo sacarle el _mejor provecho_ a cada una.
+“habilitadas” en tu _entorno de desarrollo_, también entenderás:
+
+- cómo funcionan
+- cómo hacerlas trabajar juntas
+- cómo sacarle el _mejor provecho_ a cada una
 
 ## ¿Quieres empezar?
 
