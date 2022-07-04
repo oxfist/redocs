@@ -10,22 +10,26 @@ sidebar_position: 1
 posibles bugs o errores y facilita el seguir buenas prácticas.
 
 Esta herramienta es conocida formalmente como un _analizador de código estático_
-o simplemente _linter_. El análisis estático de código posibilita la creación de
-código más entendible y limpio, identificando errores simples de corregir.
+o simplemente _linter_. Algunas cosas posibles gracias análisis estático de
+código posibilita
 
-:::tip
+- código más entendible y limpio
+- identificar errores fáciles de corregir
+
+Mediante un archivo de configuración puedes especificar qué reglas de análisis
+utilizar en tu código, y así sacarle mejor provecho en tu contexto de
+desarrollo.
+
+Aunque es posible configurar ESLint de forma “global” para que aplique las
+mismas reglas de análisis a diversos proyectos, lo _más recomendado_ —y más
+usado— es definir una configuración específica por proyecto.
+
+:::info
 
 Puedes usar ESLint desde la **terminal** o integrarlo a un **editor de texto**
 (uso recomendado).
 
 :::
-
-Mediante un archivo de configuración se puede especificar qué reglas de análisis
-utilizar en tu código, y así adecuarse mejor al contexto de desarrollo.
-
-Aunque es posible configurar ESLint de forma “global” para que aplique las
-mismas reglas de análisis a diversos proyectos, lo _más recomendado_ —y más
-usado— es definir una configuración específica por proyecto.
 
 Abajo un ejemplo de cómo funciona ESLint integrado con VSCode para que entregue
 reportes directamente en el código.

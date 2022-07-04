@@ -56,11 +56,16 @@ npm run format
 
 ## Integración con VSCode
 
-Puedes configurar Prettier para que se integre a VSCode. Con esto podrás aplicar
-el formateo de código automáticamente cada vez que guardes el contenido de un
-archivo.
+Puedes configurar Prettier para que se integre a VSCode.
 
-Priero, instala la extensión de Prettier en VSCode.
+:::tip
+
+Con esto podrás aplicar el formateo de código automáticamente cada vez que
+guardes el contenido de un archivo.
+
+:::
+
+Primero, instala la extensión de Prettier en VSCode.
 
 ![Captura de pantalla de la extensión de Prettier en VSCode](./prettier_extension.png "Busca e instala la extensión Prettier")
 
@@ -76,8 +81,8 @@ archivo.
 
 ![Captura de pantalla de la opción Format On Save habilitada](./format_on_save.png "Activa la opción Format On Save")
 
-Finalmente, activa la opción “Require Config” de la extensión de Prettier para
-que solo se aplique el formateo de código cuando existe un archivo de
+Finalmente, activa la opción “**Require Config**” de la extensión de Prettier
+para que solo se aplique el formateo de código cuando existe un archivo de
 configuración, ej. `.prettierrc.json`. De esta forma evitarás posibles
 confusiones con reglas de formateo que no estén habilitadas explícitamente.
 

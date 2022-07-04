@@ -18,7 +18,7 @@ npm install --save-dev eslint
 ```
 
 Si tu proyecto no dispone de un archivo de configuración, ej. `.eslintrc.js`,
-puedes crearlo con el siguiente comando:
+créalo con el siguiente comando:
 
 <Tabs>
 <TabItem value="npm">
@@ -37,8 +37,8 @@ yarn create @eslint/config
 </TabItem>
 </Tabs>
 
-Esto abre un tutorial interactivo en tu terminal que puedes seguir para indicar
-las características de tu proyecto que se usarán en la configuración inicial.
+Esto abre un tutorial interactivo en tu terminal que debes completar indicando
+las características de tu proyecto para crear la configuración inicial.
 
 :::info
 
@@ -76,7 +76,7 @@ dist/
 build/
 ```
 
-Con la configuración de ESLint lista, ahora puedes agregar lo siguiente en tu
+Con la configuración de ESLint lista, ahora agrega lo siguiente en tu
 `package.json`, dentro de `scripts`, para ejecutar el análisis de código desde
 la terminal:
 
@@ -91,8 +91,8 @@ la terminal:
 }
 ```
 
-Finalmente, ahora puedes usar el linter para hacer el análisis de todo tu
-proyecto ejecutando lo siguiente en tu terminal:
+Finalmente, ejecuta en tu terminal lo siguiente para que el linter haga el
+análisis de todo tu proyecto:
 
 <Tabs>
 <TabItem value="npm">
@@ -116,9 +116,12 @@ yarn lint
 Si instalas ESLint y Prettier juntos, es probable que tengas algunas colisiones
 entre errores de ESLint y el formateo de Prettier.
 
-La integración con Prettier consiste en instalar dos nuevas dependencias, (1) un
-paquete para que el formateo no colisione con ESLint y (2) un paquete para
-mostrar los errores de formateo en los reportes de ESLint.
+La integración con Prettier consiste en instalar dos nuevas dependencias:
+
+1. el paquete `eslint-config-prettier` para que el formateo no colisione con
+   ESLint
+2. el paquete `eslint-plugin-prettier` para mostrar los errores de formateo en
+   los reportes de ESLint.
 
 Primero instala el paquete `eslint-config-prettier` para desactivar las reglas
 de ESLint que colisionan con el formateo de Prettier
@@ -134,12 +137,12 @@ formateo de Prettier salgan en los reportes de ESLint:
 npm install --save-dev eslint-config-prettier
 ```
 
-Ahora actualiza tu `.eslintrc.json` con lo siguiente.
+Ahora actualiza tu `.eslintrc.json`:
 
-Para incorporar las configuraciones que trae `eslint-config-prettier` agrega
-`"prettier"` en `extends`. Para registrar los errores de Prettier como errores
-de ESLint agrega `"prettier"` en `plugins` y especifica el tipo de reporte como
-`"error"`:
+- Para incorporar las configuraciones que trae `eslint-config-prettier` agrega
+  `"prettier"` en `extends`.
+- Para registrar los errores de Prettier como errores de ESLint agrega
+  `"prettier"` en `plugins` y especifica el tipo de reporte como `"error"`:
 
 ```js title=".eslintrc.js"
 module.exports = {
@@ -159,8 +162,13 @@ conjunto. 🚀
 
 ## Integración con VSCode
 
-Puedes configurar ESLint para que se integre a VSCode. Con esto podrás obtener
-reportes de errores directamente en el editor.
+Puedes configurar ESLint para que se integre a VSCode.
+
+:::tip
+
+Con esto podrás obtener reportes de errores directamente en el editor.
+
+:::
 
 Primero, instala la extensión de ESLint en VSCode.
 
