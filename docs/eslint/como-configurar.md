@@ -9,7 +9,7 @@ sidebar_position: 2
 ESLint se puede instalar y ocupar durante el desarrollo de un proyecto de
 software. También se puede integrar a un editor de texto como VSCode.
 
-## Instalando en tu proyecto
+## Instalación en tu proyecto
 
 Primero instala el paquete `eslint` ejecutando en tu terminal:
 
