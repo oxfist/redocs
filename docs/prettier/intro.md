@@ -8,8 +8,8 @@ sidebar_position: 1
 
 [Prettier](https://prettier.io/) es una herramienta que resuelve por ti el
 problema de “formatear” código. Formatear tu código de forma consistente para
-que éste sea más legible y entendible es increíblemente importante que un equipo
-de desarrollo pueda colaborar efectivamente.
+que éste sea más legible y entendible es increíblemente importante para que un
+equipo de desarrollo pueda colaborar efectivamente.
 
 Aunque es posible configurar Prettier de forma “global” para que aplique el
 mismo estilo de código a diversos proyectos, lo _más recomendado_ —y también más
