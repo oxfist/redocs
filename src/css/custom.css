@@ -91,23 +91,17 @@ main {
 
 .plugin-pages .navbar__inner {
   max-width: var(--home-max-width);
-  padding-left: 37px;
-  padding-right: 37px;
   margin: 0 auto;
 }
 
 .docs-wrapper .navbar__inner {
   max-width: var(--docs-max-width);
-  padding-left: 37px;
-  padding-right: 37px;
   margin: 0 auto;
 }
 
 .docs-wrapper .main-wrapper {
   max-width: var(--docs-max-width);
   width: 100%;
-  padding-left: 37px;
-  padding-right: 37px;
   margin: 0 auto;
 }
 
@@ -154,7 +148,22 @@ main {
 }
 
 @media (min-width: 768px) {
-  .btn-shadow {
+  .button--shadow {
     padding: 12px 50px;
+  }
+
+  .plugin-pages .navbar__inner {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .docs-wrapper .navbar__inner {
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .docs-wrapper .main-wrapper {
+    padding-left: 37px;
+    padding-right: 37px;
   }
 }
