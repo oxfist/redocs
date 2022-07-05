@@ -30,6 +30,7 @@
     "prop-types": "^15.8.1"
   },
   "devDependencies": {
+    "@docusaurus/eslint-plugin": "^2.0.1",
     "@docusaurus/module-type-aliases": "2.0.1",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
