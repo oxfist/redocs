@@ -26,6 +26,7 @@
   --size-700: 2.36rem;
   --size-800: 3.15rem;
   --size-900: 4.2rem;
+  --home-max-width: 1280px;
   --docs-max-width: 1700px;
 }
 
@@ -86,6 +87,13 @@ main {
   padding-right: 2.5em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.plugin-pages .navbar__inner {
+  max-width: var(--home-max-width);
+  padding-left: 37px;
+  padding-right: 37px;
+  margin: 0 auto;
 }
 
 .docs-wrapper .navbar__inner {
