@@ -18,7 +18,7 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-padding-horizontal: 1.5em;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --doc-sidebar-width: min(30vw, 400px) !important;
+  --doc-sidebar-width: min(25vw, 370px) !important;
   --size-300: 0.75rem;
   --size-400: 1rem;
   --size-500: 1.33rem;
@@ -26,6 +26,7 @@
   --size-700: 2.36rem;
   --size-800: 3.15rem;
   --size-900: 4.2rem;
+  --docs-max-width: 1700px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -85,4 +86,18 @@ main {
   padding-right: 2.5em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.docs-wrapper .navbar__inner {
+  max-width: var(--docs-max-width);
+  padding-left: 37px;
+  padding-right: 37px;
+  margin: 0 auto;
+}
+
+.docs-wrapper .main-wrapper {
+  max-width: var(--docs-max-width);
+  padding-left: 37px;
+  padding-right: 37px;
+  margin: 0 auto;
 }
