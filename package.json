@@ -30,6 +30,7 @@
     "typescript": "^4.7.3"
   },
   "devDependencies": {
+    "@docusaurus/eslint-plugin": "^2.0.0-beta.21",
     "@docusaurus/module-type-aliases": "2.0.0-beta.21",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
