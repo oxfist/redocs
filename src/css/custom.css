@@ -98,6 +98,11 @@ main {
   margin: 0 auto;
 }
 
+.footer > div.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .docs-wrapper .navbar__inner {
   max-width: var(--docs-max-width);
   margin: 0 auto;
@@ -169,5 +174,20 @@ main {
   .docs-wrapper .main-wrapper {
     padding-left: 37px;
     padding-right: 37px;
+  }
+
+  footer {
+    max-width: var(--home-max-width);
+  }
+
+  .footer > div.container {
+    padding-left: calc(37px + 24px);
+    padding-right: calc(37px + 24px);
+  }
+}
+
+@media (min-width: 996px) {
+  footer {
+    max-width: unset;
   }
 }
