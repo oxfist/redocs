@@ -70,6 +70,10 @@ h2 {
   font-weight: 900;
 }
 
+.navbar__title {
+  font-size: 1.3em;
+}
+
 nav.menu {
   padding-top: 3.5em;
   padding-left: 1.5em;
