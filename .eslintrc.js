@@ -21,7 +21,6 @@ module.exports = {
     "global-require": "off",
     "prettier/prettier": ["error"],
     "react/jsx-filename-extension": ["warn", { extensions: [".js", ".jsx"] }],
-    "react/jsx-props-no-spreading": "off",
     "react/forbid-prop-types": "off",
     "import/no-unresolved": [
       2,

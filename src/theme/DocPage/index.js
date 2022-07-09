@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import clsx from "clsx";
 import {
   HtmlClassNameProvider,
@@ -13,7 +14,8 @@ import {
 import DocPageLayout from "@theme/DocPage/Layout";
 import NotFound from "@theme/NotFound";
 import SearchMetadata from "@theme/SearchMetadata";
-export default function DocPage(props) {
+
+function DocPage(props) {
   const { versionMetadata } = props;
   const currentDocRouteMetadata = useDocRouteMetadata(props);
   if (!currentDocRouteMetadata) {
@@ -34,7 +36,7 @@ export default function DocPage(props) {
           // TODO: it should be removed from here
           ThemeClassNames.wrapper.docsPages,
           ThemeClassNames.page.docsDocPage,
-          props.versionMetadata.className
+          versionMetadata.className
         )}
       >
         <DocsVersionProvider version={versionMetadata}>
@@ -46,3 +48,9 @@ export default function DocPage(props) {
     </>
   );
 }
+
+DocPage.propTypes = {
+  versionMetadata: PropTypes.object.isRequired,
+};
+
+export default DocPage;
