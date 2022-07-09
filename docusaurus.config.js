@@ -65,6 +65,11 @@ const config = {
         respectPrefersColorScheme: true,
       },
       image: "img/cat.png",
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       navbar: {
         title: "re:docs",
         logo: {

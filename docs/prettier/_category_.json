@@ -1,6 +1,9 @@
 {
   "label": "Prettier",
   "position": 1,
+  "customProps": {
+    "icon": "Si/SiPrettier"
+  },
   "link": {
     "type": "generated-index",
     "title": "¿Qué es Prettier?"
