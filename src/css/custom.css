@@ -87,8 +87,6 @@ nav.navbar {
 main {
   max-width: 850px;
   padding-top: 2.5em;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -157,6 +155,15 @@ main {
 }
 
 @media (min-width: 768px) {
+  main {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  footer {
+    max-width: var(--home-max-width);
+  }
+
   .button--shadow {
     padding: 12px 50px;
   }
@@ -174,10 +181,6 @@ main {
   .docs-wrapper .main-wrapper {
     padding-left: 37px;
     padding-right: 37px;
-  }
-
-  footer {
-    max-width: var(--home-max-width);
   }
 
   .footer > div.container {
