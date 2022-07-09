@@ -115,7 +115,7 @@ main {
 }
 
 .button--shadow {
-  appearance: button;
+  appearance: none;
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
