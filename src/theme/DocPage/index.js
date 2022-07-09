@@ -1,5 +1,5 @@
-import React from 'react';
-import clsx from 'clsx';
+import React from "react";
+import clsx from "clsx";
 import {
   HtmlClassNameProvider,
   ThemeClassNames,
@@ -7,24 +7,26 @@ import {
   DocsSidebarProvider,
   DocsVersionProvider,
   useDocRouteMetadata,
-} from '@docusaurus/theme-common';
-import DocPageLayout from '@theme/DocPage/Layout';
-import NotFound from '@theme/NotFound';
-import SearchMetadata from '@theme/SearchMetadata';
-export default function DocPage(props) {
-  const {versionMetadata} = props;
+} from "@docusaurus/theme-common";
+import DocPageLayout from "@theme/DocPage/Layout";
+import NotFound from "@theme/NotFound";
+import SearchMetadata from "@theme/SearchMetadata";
+import PropTypes from "prop-types";
+
+function DocPage(props) {
+  const { versionMetadata } = props;
   const currentDocRouteMetadata = useDocRouteMetadata(props);
   if (!currentDocRouteMetadata) {
     return <NotFound />;
   }
-  const {docElement, sidebarName, sidebarItems} = currentDocRouteMetadata;
+  const { docElement, sidebarName, sidebarItems } = currentDocRouteMetadata;
   return (
     <>
       <SearchMetadata
         version={versionMetadata.version}
         tag={docVersionSearchTag(
           versionMetadata.pluginId,
-          versionMetadata.version,
+          versionMetadata.version
         )}
       />
       <HtmlClassNameProvider
@@ -32,8 +34,9 @@ export default function DocPage(props) {
           // TODO: it should be removed from here
           ThemeClassNames.wrapper.docsPages,
           ThemeClassNames.page.docsDocPage,
-          props.versionMetadata.className,
-        )}>
+          versionMetadata.className
+        )}
+      >
         <DocsVersionProvider version={versionMetadata}>
           <DocsSidebarProvider name={sidebarName} items={sidebarItems}>
             <DocPageLayout>{docElement}</DocPageLayout>
@@ -43,3 +46,9 @@ export default function DocPage(props) {
     </>
   );
 }
+
+DocPage.propTypes = {
+  versionMetadata: PropTypes.object.isRequired,
+};
+
+export default DocPage;

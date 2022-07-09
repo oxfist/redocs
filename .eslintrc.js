@@ -20,7 +20,8 @@ module.exports = {
   rules: {
     "global-require": "off",
     "prettier/prettier": ["error"],
-    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
+    "react/jsx-filename-extension": ["warn", { extensions: [".js", ".jsx"] }],
+    "react/forbid-prop-types": "off",
     "import/no-unresolved": [
       2,
       { ignore: ["^@theme", "^@docusaurus", "^@site"] },

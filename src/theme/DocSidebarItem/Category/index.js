@@ -1,4 +1,5 @@
-import React, { Suspense, useEffect, useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
+import PropTypes from "prop-types";
 import clsx from "clsx";
 import {
   isActiveSidebarItem,
@@ -69,7 +70,13 @@ function CollapseButton({ categoryLabel, onClick }) {
     />
   );
 }
-export default function DocSidebarItemCategory({
+
+CollapseButton.propTypes = {
+  categoryLabel: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
+function DocSidebarItemCategory({
   item,
   onItemClick,
   activePath,
@@ -189,3 +196,5 @@ export default function DocSidebarItemCategory({
     </li>
   );
 }
+
+export default DocSidebarItemCategory;
