@@ -2,13 +2,24 @@
 
 Built using [Docusaurus 2](https://docusaurus.io/).
 
-### Install Dependencies
+## Roadmap
+
+- [ ] Re-design
+- [ ] OMZ/OMP/Fish
+- [ ] Yarn
+- [ ] gitui
+- [ ] SASS
+- [ ] emotion
+- [ ] MUI
+- [ ] Stylelint
+
+## Install Dependencies
 
 ```
 $ yarn
 ```
 
-### Local Development
+## Local Development
 
 ```
 $ yarn start
@@ -17,7 +28,7 @@ $ yarn start
 This command starts a local development server and opens up a browser window.
 Most changes are reflected live without having to restart the server.
 
-### Build
+## Build
 
 ```
 $ yarn build
