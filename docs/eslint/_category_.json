@@ -5,6 +5,7 @@
     "icon": "Si/SiEslint"
   },
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "title": "¿Qué es ESLint?"
   }
 }
