@@ -25,3 +25,14 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be
 served using any static contents hosting service.
+
+### Roadmap
+
+- [] Re-design
+- [] OMZ/OMP/Fish
+- [] Yarn
+- [] gitui
+- [] SASS
+- [] emotion
+- [] MUI
+- [] Stylelint
