@@ -9,7 +9,7 @@ Built using [Docusaurus 2](https://docusaurus.io/).
 - [ ] Yarn
 - [ ] gitui
 - [ ] SASS
-- [ ] emotion
+- [ ] emotion/Tailwind
 - [ ] MUI
 - [ ] Stylelint
 
