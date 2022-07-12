@@ -43,6 +43,7 @@ const config = {
             { sync: true },
           ],
           breadcrumbs: false,
+          routeBasePath: "/",
         },
         blog: {
           showReadingTime: true,
@@ -99,7 +100,7 @@ const config = {
             items: [
               {
                 label: "Introducción",
-                to: "/docs/",
+                to: "/intro/",
               },
             ],
           },

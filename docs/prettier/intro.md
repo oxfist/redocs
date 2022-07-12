@@ -1,6 +1,7 @@
 ---
 title: 1. Introducción a Prettier
 description: ¿Qué es Prettier y para qué se ocupa?
+slug: "/prettier"
 sidebar_position: 1
 ---
 

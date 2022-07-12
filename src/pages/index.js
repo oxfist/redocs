@@ -75,7 +75,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg button--shadow"
-            to="/docs/"
+            to="/intro"
           >
             ¡Quiero ver! <BoopingRocket />
           </Link>

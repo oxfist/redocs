@@ -1,6 +1,7 @@
 ---
 title: 1. Introducción a ESLint
 description: ¿Qué es ESLint y para qué se ocupa?
+slug: "/eslint"
 sidebar_position: 1
 ---
 

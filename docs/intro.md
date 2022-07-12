@@ -1,7 +1,7 @@
 ---
 title: ¿Qué es re:docs?
 sidebar_position: 1
-slug: "/"
+slug: "/intro"
 ---
 
 # ¿Qué es <span className="redocs">re:docs</span>?
