@@ -73,7 +73,10 @@ function HomepageHeader() {
         <RedocsLogo text={siteConfig.title} />
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/">
+          <Link
+            className="button button--secondary button--lg button--shadow"
+            to="/intro"
+          >
             ¡Quiero ver! <BoopingRocket />
           </Link>
         </div>
