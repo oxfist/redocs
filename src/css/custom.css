@@ -64,6 +64,19 @@ h2 {
   font-weight: 900;
 }
 
+li {
+  margin-bottom: 20px;
+}
+
+article {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+header + article {
+  max-width: unset;
+}
+
 .redocs,
 .navbar__title {
   font-family: "Source Serif Pro", serif;
