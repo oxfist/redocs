@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import { useSpring, animated } from "react-spring";
+import { useSound } from "use-sound";
 
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -11,6 +12,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import useBoop from "../hooks/useBoop";
 
 import styles from "./index.module.css";
+import keystrokeSfx from "./keystroke.mp3";
 
 const MAIN_HEADER_SPRING_CONFIG = {
   to: { opacity: 1, y: 0 },
@@ -67,6 +69,8 @@ function BoopingRocket() {
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const [playKeystroke] = useSound(keystrokeSfx);
+
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
@@ -74,6 +78,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
+            onClick={playKeystroke}
             className="button button--secondary button--lg button--shadow"
             to="/intro"
           >
