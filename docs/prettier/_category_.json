@@ -2,7 +2,7 @@
   "label": "Prettier",
   "position": 1,
   "customProps": {
-    "icon": "Si/SiPrettier"
+    "icon": "prettier"
   },
   "link": {
     "type": "generated-index",

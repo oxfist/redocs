@@ -4,3 +4,4 @@ build/
 .docusaurus/
 .vercel/
 *.ejemplo.js
+*.d.ts

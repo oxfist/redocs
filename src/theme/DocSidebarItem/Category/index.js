@@ -197,4 +197,8 @@ function DocSidebarItemCategory({
   );
 }
 
+DocSidebarItemCategory.propTypes = {
+  item: PropTypes.object.isRequired,
+};
+
 export default DocSidebarItemCategory;
