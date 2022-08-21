@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import loadable from "@loadable/component";
+import { SiEslint, SiPrettier } from "react-icons/si";
+
+const CATEGORY_TO_ICON_MAPPING = {
+  eslint: <SiEslint />,
+  prettier: <SiPrettier />,
+};
+
+Object.freeze(CATEGORY_TO_ICON_MAPPING);
 
 function DynamicIcon({ icon }) {
-  const [library, iconComponent] = icon.split("/");
-  const lib = library.toLowerCase();
-
-  const Icon = loadable(() => import(`react-icons/${lib}/`), {
-    resolveComponent: (el) => el[iconComponent],
-  });
-
-  return <Icon />;
+  return CATEGORY_TO_ICON_MAPPING[icon];
 }
 
 DynamicIcon.propTypes = {

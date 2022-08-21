@@ -2,7 +2,7 @@
   "label": "ESLint",
   "position": 2,
   "customProps": {
-    "icon": "Si/SiEslint"
+    "icon": "eslint"
   },
   "link": {
     "type": "generated-index"
