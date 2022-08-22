@@ -9,7 +9,7 @@ sidebar_position: 2
 Prettier se puede instalar y ocupar durante el desarrollo de un proyecto de
 software. También se puede integrar a un editor de texto como VSCode.
 
-## Instalación en tu proyecto
+## Instala el paquete
 
 Primero instala el paquete `prettier` ejecutando en tu terminal:
 
@@ -54,7 +54,7 @@ siguiente en tu terminal:
 npm run format
 ```
 
-## Integración con VSCode
+## Integra con VSCode
 
 Puedes configurar Prettier para que se integre a VSCode.
 
@@ -67,7 +67,7 @@ guardes el contenido de un archivo.
 
 Primero, instala la extensión de Prettier en VSCode.
 
-![Captura de pantalla de la extensión de Prettier en VSCode](./prettier_extension.png "Busca e instala la extensión Prettier")
+![Imagen animada de la extensión de Prettier en VSCode](./prettier_extension.gif "Busca e instala la extensión Prettier")
 
 Luego, habilita Prettier como el formateador por defecto bajo **Text Editor** en
 las configuraciones de VSCode para asegurarte de usar este programa para el

@@ -9,7 +9,7 @@ sidebar_position: 2
 ESLint se puede instalar y ocupar durante el desarrollo de un proyecto de
 software. También se puede integrar a un editor de texto como VSCode.
 
-## Instalación en tu proyecto
+## Instala el paquete
 
 Primero instala el paquete `eslint` ejecutando en tu terminal:
 
@@ -111,7 +111,7 @@ yarn lint
 </TabItem>
 </Tabs>
 
-## Integración con Prettier
+## Integra con Prettier
 
 Si instalas ESLint y Prettier juntos, es probable que tengas algunas colisiones
 entre errores de ESLint y el formateo de Prettier.
@@ -160,7 +160,7 @@ module.exports = {
 Terminando estos pasos ya tendrás ESLint y Prettier funcionando bien en
 conjunto. 🚀
 
-## Integración con VSCode
+## Integra con VSCode
 
 Puedes configurar ESLint para que se integre a VSCode.
 
