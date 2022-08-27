@@ -4,10 +4,11 @@ Built using [Docusaurus 2](https://docusaurus.io/).
 
 ## Roadmap
 
-- [ ] Re-design
+- [ ] Vite
 - [ ] OMZ/OMP/Fish
 - [ ] Yarn
 - [ ] gitui
+- [ ] Re-design
 - [ ] SASS
 - [ ] emotion/Tailwind
 - [ ] MUI
