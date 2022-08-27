@@ -1,61 +1,53 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
-const GITHUB_URL = "https://github.com/oxfist/redocs";
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "re:docs",
-  tagline: "Las mejores herramientas para el desarrollo web a tu disposición",
-  url: "https://redocs.dev",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  url: 'https://your-docusaurus-test-site.com',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "oxfist", // Usually your GitHub org/user name.
-  projectName: "redocs", // Usually your repo name.
-
-  plugins: ["./plugins/sound-loader"],
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "es",
-    locales: ["es"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/oxfist/redocs",
-          remarkPlugins: [
-            require("@docusaurus/remark-plugin-npm2yarn"),
-            { sync: true },
-          ],
-          breadcrumbs: false,
-          routeBasePath: "/",
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -64,63 +56,71 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
-      image: "img/cat.png",
-      docs: {
-        sidebar: {
-          autoCollapseCategories: true,
-        },
-      },
       navbar: {
-        title: "re:docs",
+        title: 'My Site',
         logo: {
-          alt: "re:docs",
-          src: "img/logo.svg",
+          alt: 'My Site Logo',
+          src: 'img/logo.svg',
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Tutoriales",
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Tutorial',
           },
-          // { to: "/blog", label: "Blog", position: "left" },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: GITHUB_URL,
-            label: "GitHub",
-            position: "right",
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         links: [
           {
-            title: "Docs",
+            title: 'Docs',
             items: [
               {
-                label: "Introducción",
-                to: "/intro/",
+                label: 'Tutorial',
+                to: '/docs/intro',
               },
             ],
           },
           {
-            title: "Más",
+            title: 'Community',
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: "GitHub",
-                href: GITHUB_URL,
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <span class="redocs">re:docs</span>. Construido con Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
