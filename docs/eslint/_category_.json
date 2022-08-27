@@ -5,7 +5,6 @@
     "icon": "eslint"
   },
   "link": {
-    "type": "generated-index",
-    "title": "¿Qué es ESLint?"
+    "type": "generated-index"
   }
 }

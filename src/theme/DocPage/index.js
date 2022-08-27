@@ -1,17 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 import clsx from "clsx";
 import {
   HtmlClassNameProvider,
   ThemeClassNames,
+} from "@docusaurus/theme-common";
+import {
   docVersionSearchTag,
   DocsSidebarProvider,
   DocsVersionProvider,
   useDocRouteMetadata,
-} from "@docusaurus/theme-common";
+} from "@docusaurus/theme-common/internal";
 import DocPageLayout from "@theme/DocPage/Layout";
 import NotFound from "@theme/NotFound";
 import SearchMetadata from "@theme/SearchMetadata";
-import PropTypes from "prop-types";
 
 function DocPage(props) {
   const { versionMetadata } = props;
