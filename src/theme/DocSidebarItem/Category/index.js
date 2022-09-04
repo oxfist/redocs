@@ -201,6 +201,10 @@ function DocSidebarItemCategory({
 
 DocSidebarItemCategory.propTypes = {
   item: PropTypes.object.isRequired,
+  onItemClick: PropTypes.func.isRequired,
+  activePath: PropTypes.string.isRequired,
+  level: PropTypes.number.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default DocSidebarItemCategory;

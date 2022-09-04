@@ -3,4 +3,3 @@ dist/
 build/
 .docusaurus/
 .vercel/
-*.d.ts
